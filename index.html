@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pola — Post-sweat care for young India</title>
+  <meta name="description" content="Pola Cooldown is a hypochlorous acid (HOCl) spray for face, body and scalp. One hero spray, in a bottle you clip to your gym bag." />
+  <meta name="theme-color" content="#10241F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='36' r='22' fill='%233CC8B4'/><rect x='24' y='4' width='16' height='12' rx='4' fill='%23FF5C7F'/></svg>" />
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__mist"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="preloader__word">pola</div>
+    <div class="preloader__meta">
+      <span>CALIBRATING MIST</span>
+      <span class="preloader__count">000</span>
+    </div>
+    <div class="preloader__bar"><i></i></div>
+  </div>
+
+  <!-- ============ FX LAYERS ============ -->
+  <canvas class="mist-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+  <div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo" data-magnetic aria-label="Pola home">pola<sup>®</sup></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#idea">Idea</a>
+      <a href="#consumer">Consumer</a>
+      <a href="#gap">Gap</a>
+      <a href="#proof">Proof</a>
+      <a href="#now">Now</a>
+      <a href="#business">Business</a>
+      <a href="#plan">Plan</a>
+      <a href="#team">Team</a>
+    </nav>
+    <div class="nav__actions">
+      <span class="nav__section" aria-live="polite"><b data-nav-num>00</b> <span data-nav-name>Cover</span></span>
+      <button class="nav__bag" data-open-bag data-magnetic aria-label="Open bag">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav__bag-count" data-bag-count>0</span>
+      </button>
+      <a href="#waitlist" class="btn btn--pink btn--sm" data-magnetic>Join waitlist</a>
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false" data-burger><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu>
+    <a href="#idea"><em>01</em> The idea</a>
+    <a href="#consumer"><em>02</em> The consumer</a>
+    <a href="#gap"><em>03</em> The gap</a>
+    <a href="#proof"><em>04</em> Why it's real</a>
+    <a href="#now"><em>05</em> Why now</a>
+    <a href="#business"><em>06</em> The business</a>
+    <a href="#done"><em>07</em> Done so far</a>
+    <a href="#unknown"><em>08</em> Biggest unknown</a>
+    <a href="#plan"><em>09</em> First move</a>
+    <a href="#team"><em>10</em> Why us</a>
+    <a href="#waitlist" class="btn btn--pink">Join waitlist</a>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO / COVER ============ -->
+    <section class="hero" id="top" data-section="00" data-name="Cover">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--dark hero__eyebrow" data-hero-fade>A consumer business idea · The Foundery</p>
+        <h1 class="hero__title" aria-label="Pola"><span data-split>Pola</span></h1>
+        <p class="hero__lede" data-hero-fade>Post-sweat care for young India. One hero spray for face, body and scalp, in a bottle you clip to your gym bag.</p>
+        <div class="hero__ctas" data-hero-fade>
+          <a href="#idea" class="btn btn--dark" data-magnetic>Explore Pola <span aria-hidden="true">↓</span></a>
+          <a href="#waitlist" class="btn btn--ghost-dark" data-magnetic>Reserve a bottle</a>
+        </div>
+        <p class="hero__byline" data-hero-fade>Tanish Gupta &amp; Riya Kapoor<span>·</span>October 2026</p>
+      </div>
+
+      <div class="hero__bottles" aria-hidden="true">
+        <div class="float f1" data-depth="0.6">
+          <div class="bottle bottle--orb"><i class="ring"></i><i class="cap"></i><i class="body"><b>pola</b><small>30 ml</small></i></div>
+        </div>
+        <div class="float f2" data-depth="1.1">
+          <div class="bottle bottle--clip"><i class="carabiner"></i><i class="cap"></i><i class="body"><b>pola</b></i></div>
+        </div>
+        <div class="float f3" data-depth="0.8">
+          <div class="bottle bottle--cream"><i class="cap marble marble--pink"></i><i class="neck"></i><i class="body"><b>pola</b></i></div>
+        </div>
+        <div class="float f4" data-depth="1.4">
+          <div class="bottle bottle--puck"><i class="cap marble marble--yellow"></i><i class="body"><b>pola</b><small>refill 500 ml</small></i></div>
+        </div>
+      </div>
+
+      <div class="hero__hint" data-hero-fade>
+        <span class="hint-dot"></span> Click &amp; hold anywhere to spray
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Face</span><b>✦</b><span>Body</span><b>✦</b><span>Scalp</span><b>✦</b><span>No rinse</span><b>✦</b><span>Flight-safe</span><b>✦</b><span>HOCl</span><b>✦</b><span>Clip it to your bag</span><b>✦</b>
+        <span>Face</span><b>✦</b><span>Body</span><b>✦</b><span>Scalp</span><b>✦</b><span>No rinse</span><b>✦</b><span>Flight-safe</span><b>✦</b><span>HOCl</span><b>✦</b><span>Clip it to your bag</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ 01 THE IDEA ============ -->
+    <section class="section" id="idea" data-section="01" data-name="The idea">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">01</span> The idea</p>
+          <h2 class="h2" data-reveal>A spray for the hour after you sweat, made to be <em class="pink">used in the open.</em></h2>
+        </header>
+
+        <div class="idea">
+          <div class="idea__copy">
+            <p class="lead" data-reveal><strong>Pola Cooldown</strong> is a hypochlorous acid (HOCl) spray for face, body and scalp. Use it after the gym, on a flight or before a meeting. It soothes skin, helps keep it clean and needs no rinse.</p>
+            <p data-reveal>HOCl is a molecule the body makes itself to fight bacteria, so it is gentle on sensitive skin.</p>
+
+            <div class="molecule" data-reveal aria-label="Hypochlorous acid molecule: H, O, Cl">
+              <svg viewBox="0 0 320 140" class="molecule__svg">
+                <line x1="70" y1="90" x2="160" y2="56" class="bond" />
+                <line x1="160" y1="56" x2="255" y2="86" class="bond" />
+                <g class="atom atom--h"><circle cx="70" cy="90" r="22"/><text x="70" y="96">H</text></g>
+                <g class="atom atom--o"><circle cx="160" cy="56" r="32"/><text x="160" y="64">O</text></g>
+                <g class="atom atom--cl"><circle cx="255" cy="86" r="38"/><text x="255" y="95">Cl</text></g>
+              </svg>
+              <div class="molecule__tags">
+                <span>Water</span><span>+</span><span>Salt</span><span>+</span><span>Electrolysis</span>
+              </div>
+            </div>
+
+            <aside class="callout callout--maroon" data-reveal>
+              <p class="eyebrow eyebrow--pink">The bottle is the status symbol</p>
+              <p>HOCl breaks down in light, so the bottle has to be opaque. That becomes the look: <strong>playful shapes, marbled caps, key rings and clips.</strong></p>
+            </aside>
+          </div>
+
+          <!-- product selector -->
+          <div class="shop" data-shop data-reveal>
+            <div class="shop__stage">
+              <div class="shop__halo" aria-hidden="true"></div>
+              <div class="shop__bottle is-active" data-shop-bottle="orb" aria-hidden="true">
+                <div class="bottle bottle--orb bottle--xl"><i class="ring"></i><i class="cap"></i><i class="body"><b>pola</b><small>30 ml</small></i></div>
+              </div>
+              <div class="shop__bottle" data-shop-bottle="clip" aria-hidden="true">
+                <div class="bottle bottle--clip bottle--xl"><i class="carabiner"></i><i class="cap"></i><i class="body"><b>pola</b></i></div>
+              </div>
+              <div class="shop__bottle" data-shop-bottle="puck" aria-hidden="true">
+                <div class="bottle bottle--puck bottle--xl"><i class="cap marble marble--yellow"></i><i class="body"><b>pola</b><small>refill 500 ml</small></i></div>
+              </div>
+              <span class="shop__spec" data-shop-spec>30ml · key ring · flight-safe</span>
+            </div>
+
+            <div class="shop__tabs" role="tablist" aria-label="Choose a bottle">
+              <button role="tab" class="shop__tab is-active" aria-selected="true" data-shop-tab="orb">
+                <span class="shop__tab-name">Orb mini</span><span class="shop__tab-size">30ml</span><span class="shop__tab-price">₹199</span>
+              </button>
+              <button role="tab" class="shop__tab" aria-selected="false" data-shop-tab="clip">
+                <span class="shop__tab-name">Clip</span><span class="shop__tab-size">120ml</span><span class="shop__tab-price">₹549</span>
+              </button>
+              <button role="tab" class="shop__tab" aria-selected="false" data-shop-tab="puck">
+                <span class="shop__tab-name">Puck refill</span><span class="shop__tab-size">500ml</span><span class="shop__tab-price">₹1,199</span>
+              </button>
+            </div>
+
+            <div class="shop__detail">
+              <div>
+                <h3 class="shop__name" data-shop-name>Orb mini</h3>
+                <p class="shop__desc" data-shop-desc>Key ring, flight-safe.</p>
+              </div>
+              <div class="shop__buy">
+                <span class="shop__price" data-shop-price>₹199</span>
+                <button class="btn btn--pink" data-add-to-bag data-magnetic>Add to bag <span aria-hidden="true">+</span></button>
+              </div>
+            </div>
+            <p class="fineprint">Prices are hypotheses to test. Pre-launch: adding to bag reserves a spot, nothing is charged.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 THE CONSUMER ============ -->
+    <section class="section section--alt" id="consumer" data-section="02" data-name="The consumer">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">02</span> The consumer</p>
+          <h2 class="h2" data-reveal><span class="teal">20 to 32 year olds</span> whose day keeps going after they sweat.</h2>
+        </header>
+
+        <div class="personas">
+          <article class="persona tilt" data-reveal data-tilt>
+            <div class="persona__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="4" y="20" width="8" height="8" rx="2"/><rect x="36" y="20" width="8" height="8" rx="2"/><rect x="10" y="15" width="5" height="18" rx="2"/><rect x="33" y="15" width="5" height="18" rx="2"/><rect x="15" y="22" width="18" height="4"/></svg>
+            </div>
+            <p class="eyebrow eyebrow--teal">Persona A</p>
+            <h3 class="h3">The Gym Regular</h3>
+            <ul class="ticks">
+              <li>Trains before work or college.</li>
+              <li>The gym shower is shared, queued or skipped.</li>
+              <li>Goes straight to the office, a class or a date.</li>
+              <li>Notices what's in everyone's gym bag.</li>
+            </ul>
+          </article>
+          <article class="persona tilt" data-reveal data-tilt>
+            <div class="persona__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M4 28l40-12-4 6-30 10z"/><path d="M18 24l6-12 4 1-3 10z"/><path d="M10 31l-2 6 3 0 5-7z"/></svg>
+            </div>
+            <p class="eyebrow eyebrow--yellow">Persona B</p>
+            <h3 class="h3">The Mover</h3>
+            <ul class="ticks">
+              <li>Early flights, overnight trains, long humid commutes.</li>
+              <li>Hours without a proper wash.</li>
+              <li>Carries a pouch of minis, and each one has to earn its place.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="jobs" data-reveal>
+          <div class="job">
+            <span class="job__verb">Do</span>
+            <p>Sweaty to presentable in <strong>5 minutes</strong>, without a shower.</p>
+          </div>
+          <div class="job">
+            <span class="job__verb">Solve</span>
+            <p>Breakouts, chest and back acne, itch in the folds, odour, fear of ringworm.</p>
+          </div>
+          <div class="job">
+            <span class="job__verb">Feel</span>
+            <p>Put together, seen as someone who takes care of themselves. In metro India, <strong>health is now status.</strong></p>
+          </div>
+        </div>
+
+        <div class="survey" data-reveal>
+          <div class="survey__intro">
+            <p class="eyebrow">Sensitive skin is common</p>
+            <p>In a survey of <strong><span data-count="3012" data-format="comma">0</span> people</strong>, more women than men said they have sensitive skin — and under-45s reported it more often.</p>
+          </div>
+          <div class="survey__bars">
+            <div class="meter">
+              <div class="meter__top"><span>Women</span><b><span data-count="36.7" data-decimals="1">0</span>%</b></div>
+              <div class="meter__track"><i class="meter__fill meter__fill--pink" style="--v:36.7%"></i></div>
+            </div>
+            <div class="meter">
+              <div class="meter__top"><span>Men</span><b><span data-count="27.9" data-decimals="1">0</span>%</b></div>
+              <div class="meter__track"><i class="meter__fill meter__fill--teal" style="--v:27.9%"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 THE GAP ============ -->
+    <section class="section" id="gap" data-section="03" data-name="The gap">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">03</span> The gap</p>
+          <h2 class="h2" data-reveal>India already has the molecule, but <em class="pink">no brand owns the moment.</em></h2>
+        </header>
+
+        <div class="gap">
+          <figure class="chart" data-reveal>
+            <div class="chart__filters" role="group" aria-label="Filter positioning map">
+              <button class="chip is-active" data-chart-filter="all">All</button>
+              <button class="chip" data-chart-filter="india">Sold in India</button>
+              <button class="chip" data-chart-filter="abroad">Not in India</button>
+            </div>
+            <div class="chart__plot" data-chart>
+              <span class="chart__axis chart__axis--x" aria-hidden="true"></span>
+              <span class="chart__axis chart__axis--y" aria-hidden="true"></span>
+              <span class="chart__label chart__label--top">Made for after sweat</span>
+              <span class="chart__label chart__label--bottom">Generic use</span>
+              <span class="chart__label chart__label--left">Clinical</span>
+              <span class="chart__label chart__label--right">Fashion / identity</span>
+              <div class="chart__zone" aria-hidden="true"><span>Unowned</span></div>
+
+              <button class="dot dot--filled" data-region="india" style="--x:36%;--y:22%" data-tip="Travel hygiene. Sold in India.">Pee Safe</button>
+              <button class="dot dot--filled" data-region="india" style="--x:16%;--y:34%" data-tip="₹359 / 200ml. A clinical toner; post-workout is in the usage notes.">Minimalist HOCl</button>
+              <button class="dot dot--filled" data-region="india" style="--x:42%;--y:60%" data-tip="Mask odour with alcohol and fragrance.">Deodorants</button>
+              <button class="dot dot--hollow dot--flip" data-region="abroad" style="--x:72%;--y:58%" data-tip="Design sells hygiene — but not in India, not made for sweat.">Tower 28 SOS</button>
+              <button class="dot dot--filled" data-region="india" style="--x:8%;--y:88%" data-tip="After the damage. Linked to recurring ringworm.">Steroid combo creams</button>
+              <button class="dot dot--hollow dot--flip" data-region="abroad" style="--x:78%;--y:86%" data-tip="Design-led sanitizer. Not in India.">Touchland</button>
+              <button class="dot dot--pola dot--flip" data-region="pola" style="--x:84%;--y:18%" data-tip="Made for after sweat. Designed to be seen.">Pola</button>
+
+              <div class="chart__tip" role="status" data-chart-tip></div>
+            </div>
+            <figcaption class="fineprint">Filled dots are sold in India; hollow dots are not. Positions are my judgement.</figcaption>
+          </figure>
+
+          <div class="gap__list">
+            <p class="eyebrow">Why today's options fall short</p>
+            <ol class="numbered">
+              <li data-reveal><span>01</span><p><strong>Minimalist</strong> is a clinical toner; "post-workout" is hidden in the usage notes.</p></li>
+              <li data-reveal><span>02</span><p><strong>Deodorants, wipes and sanitizers</strong> mask odour with alcohol and fragrance, which sensitive skin often reacts to.</p></li>
+              <li data-reveal><span>03</span><p><strong>Steroid creams</strong> come after the damage and are linked to recurring ringworm.</p></li>
+              <li data-reveal><span>04</span><p><strong>Tower 28 and Touchland</strong> prove design sells hygiene, but neither is in India or made for sweat.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 WHY IT IS REAL ============ -->
+    <section class="section section--alt" id="proof" data-section="04" data-name="Why it's real">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">04</span> Why you believe it is real</p>
+          <h2 class="h2" data-reveal>The pain is clinical. <em class="teal">The demand is proven.</em></h2>
+        </header>
+
+        <div class="proof">
+          <article class="stat-card stat-card--pink tilt" data-reveal data-tilt>
+            <p class="eyebrow">The pain</p>
+            <div class="stat-card__num"><span data-count="81">0</span>–<span data-count="93">0</span>%</div>
+            <p>Ringworm (tinea) is called <strong>"epidemic-like."</strong> In two hospital studies, 81–93% of patients had misused steroid creams.</p>
+          </article>
+          <article class="stat-card stat-card--teal tilt" data-reveal data-tilt>
+            <p class="eyebrow">The behaviour</p>
+            <div class="stat-card__num"><span data-count="30">0</span>%</div>
+            <p>Minimalist tells buyers to spray post-workout. Tower 28 sold SOS through fitness classes — and that one spray is <strong>30% of a $228M brand.</strong></p>
+          </article>
+          <article class="stat-card stat-card--yellow tilt" data-reveal data-tilt>
+            <p class="eyebrow">The exit</p>
+            <div class="stat-card__num">$<span data-count="700">0</span>M+</div>
+            <p>Touchland sold for <strong>$700M+</strong> on about $130M in sales. Design-led hygiene is a real category.</p>
+          </article>
+        </div>
+
+        <blockquote class="quote" data-reveal>
+          <span class="quote__mark" aria-hidden="true">“</span>
+          <p data-words>I see it at the gym… Nothing in there says ‘I take care of my skin’.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ 05 WHY NOW ============ -->
+    <section class="section" id="now" data-section="05" data-name="Why now">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">05</span> Why now</p>
+          <h2 class="h2" data-reveal>Four curves are bending <em class="yellow">at the same time.</em></h2>
+        </header>
+
+        <div class="now">
+          <article class="now__card" data-reveal>
+            <span class="now__tag">Fitness goes social</span>
+            <div class="now__num"><span data-count="12.3" data-decimals="1">0</span>M <small>→ ~23M by 2030</small></div>
+            <p>Gym members — just 0.8% of India. Run clubs and HYROX make fitness social.</p>
+            <div class="spark" aria-hidden="true"><i style="--h:30%"></i><i style="--h:38%"></i><i style="--h:46%"></i><i style="--h:56%"></i><i style="--h:68%"></i><i style="--h:82%"></i><i style="--h:100%"></i></div>
+          </article>
+          <article class="now__card" data-reveal>
+            <span class="now__tag">10-minute re-buys</span>
+            <div class="now__num"><span data-count="2">0</span>%<span class="now__arrow">→</span><span data-count="16">0</span>%</div>
+            <p>Quick commerce's share of online beauty, 2022 to 2025. "I just ran out" now takes 10 minutes.</p>
+            <div class="spark" aria-hidden="true"><i style="--h:12%"></i><i style="--h:30%"></i><i style="--h:62%"></i><i style="--h:100%"></i></div>
+          </article>
+          <article class="now__card" data-reveal>
+            <span class="now__tag">Clinical skincare</span>
+            <div class="now__num">+<span data-count="13">0</span>% <small>₹32,210 Cr</small></div>
+            <p>Indian skincare grew 13% in 2025, led by clinical, sensitive-safe products.</p>
+            <div class="spark" aria-hidden="true"><i style="--h:62%"></i><i style="--h:70%"></i><i style="--h:79%"></i><i style="--h:88%"></i><i style="--h:100%"></i></div>
+          </article>
+          <article class="now__card" data-reveal>
+            <span class="now__tag">Always moving</span>
+            <div class="now__num"><span data-count="16.5" data-decimals="1">0</span> Cr</div>
+            <p>Domestic air passengers in FY25 — the Mover, hours from a proper wash.</p>
+            <div class="spark spark--plane" aria-hidden="true"><svg viewBox="0 0 120 40"><path d="M2 36 C 40 34, 70 24, 116 4" /><circle cx="116" cy="4" r="3"/></svg></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 THE BUSINESS ============ -->
+    <section class="section section--alt" id="business" data-section="06" data-name="The business">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">06</span> The business</p>
+          <h2 class="h2" data-reveal>Win the gym bag with one spray, <em class="pink">then build the post-sweat kit.</em></h2>
+        </header>
+
+        <div class="biz">
+          <div class="biz__pricing" data-reveal>
+            <p class="eyebrow">Price per ml</p>
+            <div class="ppm">
+              <div class="ppm__row ppm__row--bench">
+                <span class="ppm__name">Minimalist 200ml <em>benchmark</em></span><span class="ppm__price">₹359</span>
+                <div class="ppm__bar"><i style="--v:27%"></i></div><b>1.8</b>
+              </div>
+              <div class="ppm__row">
+                <span class="ppm__name">Orb 30ml</span><span class="ppm__price">₹199</span>
+                <div class="ppm__bar"><i style="--v:100%"></i></div><b>6.6</b>
+              </div>
+              <div class="ppm__row ppm__row--hero">
+                <span class="ppm__name">Clip 120ml <em>hero</em></span><span class="ppm__price">₹549</span>
+                <div class="ppm__bar"><i style="--v:70%"></i></div><b>4.6</b>
+              </div>
+              <div class="ppm__row">
+                <span class="ppm__name">Puck 500ml</span><span class="ppm__price">₹1,199</span>
+                <div class="ppm__bar"><i style="--v:36%"></i></div><b>2.4</b>
+              </div>
+              <p class="ppm__unit">₹ / ml</p>
+            </div>
+            <p class="biz__note">We charge for the bottle, the ritual and the brand. The refill keeps loyal users near the clinical price. HOCl is water, salt and electrolysis, so <strong>packaging is the main cost.</strong></p>
+          </div>
+
+          <div class="calc" data-calc data-reveal>
+            <div class="calc__head">
+              <p class="eyebrow eyebrow--yellow">Size it yourself</p>
+              <div class="calc__result">
+                <span class="calc__currency">₹</span><span class="calc__value" data-calc-out>135</span><span class="calc__unit">Cr / yr</span>
+              </div>
+              <p class="calc__formula" data-calc-formula>5% × 12.3M × 4 bottles/yr × ₹549</p>
+            </div>
+            <label class="slider">
+              <span>Share of gym members <b data-calc-label="share">5%</b></span>
+              <input type="range" min="1" max="20" step="0.5" value="5" data-calc-in="share" />
+            </label>
+            <label class="slider">
+              <span>Gym members <b data-calc-label="members">12.3M</b></span>
+              <input type="range" min="12.3" max="25" step="0.1" value="12.3" data-calc-in="members" />
+            </label>
+            <label class="slider">
+              <span>Bottles per year <b data-calc-label="bottles">4</b></span>
+              <input type="range" min="1" max="12" step="1" value="4" data-calc-in="bottles" />
+            </label>
+            <label class="slider">
+              <span>Price per bottle <b data-calc-label="price">₹549</b></span>
+              <input type="range" min="199" max="999" step="10" value="549" data-calc-in="price" />
+            </label>
+            <div class="calc__presets">
+              <button class="chip" data-calc-preset="today">Today · 12.3M</button>
+              <button class="chip" data-calc-preset="2030">2030 · ~23M ≈ ₹256 Cr</button>
+            </div>
+            <p class="fineprint">The 5% and 4 bottles are assumptions.</p>
+          </div>
+        </div>
+
+        <div class="biz__grid">
+          <article class="tile" data-reveal>
+            <span class="tile__icon" aria-hidden="true">◎</span>
+            <h3 class="h4">Sell where people sweat</h3>
+            <p>Gym front desks, boutique studios, spray stations at run-club and HYROX finish lines.</p>
+          </article>
+          <article class="tile" data-reveal>
+            <span class="tile__icon" aria-hidden="true">⚡</span>
+            <h3 class="h4">Re-buys on quick commerce</h3>
+            <p>Blinkit, Zepto, Instamart. Nykaa and Tira for discovery.</p>
+            <div class="logos"><span>Blinkit</span><span>Zepto</span><span>Instamart</span><span>Nykaa</span><span>Tira</span></div>
+          </article>
+          <article class="tile" data-reveal>
+            <span class="tile__icon" aria-hidden="true">⛨</span>
+            <h3 class="h4">Defend against dupes</h3>
+            <p>Collectible bottles, a dermatologist panel testing on Indian skin, and gym / run-club communities.</p>
+          </article>
+        </div>
+
+        <div class="range" data-reveal>
+          <p class="eyebrow">Range, one step at a time</p>
+          <ol class="range__steps">
+            <li class="is-now"><span>01</span>Spray</li>
+            <li><span>02</span>Scalp mist</li>
+            <li><span>03</span>Post-gym body wash</li>
+            <li><span>04</span>Fold &amp; chafe care</li>
+            <li><span>05</span>Travel kit</li>
+          </ol>
+        </div>
+
+        <div class="precedent" data-reveal>
+          <p class="eyebrow">Precedent</p>
+          <div class="precedent__row">
+            <div><b>₹<span data-count="2955" data-format="comma">0</span> Cr</b><p>HUL valued Minimalist at ₹2,955 Cr after ₹347 Cr revenue.</p></div>
+            <div><b>₹<span data-count="82">0</span> Cr</b><p>Pee Safe reached ₹82 Cr from a single hygiene worry.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 DONE SO FAR ============ -->
+    <section class="section" id="done" data-section="07" data-name="Done so far">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">07</span> What you have done so far</p>
+          <h2 class="h2" data-reveal>Desk research done. <em class="teal">The street comes next.</em></h2>
+        </header>
+
+        <div class="done">
+          <ul class="log">
+            <li class="log__item is-done" data-reveal>
+              <span class="log__status">Done</span>
+              <p>Studied Tower 28's growth and India's fitness, skin-health and beauty-channel data.</p>
+            </li>
+            <li class="log__item is-done" data-reveal>
+              <span class="log__status">Done</span>
+              <p>Mapped who sells HOCl in India and at what price.</p>
+            </li>
+            <li class="log__item is-pending" data-reveal>
+              <span class="log__status">Not yet</span>
+              <p>No interviews or prototype yet. Chalet taught us to find the real buyer early — that's what the first 30 days do.</p>
+            </li>
+          </ul>
+          <div class="learned" data-reveal>
+            <p class="eyebrow eyebrow--yellow">What we learned</p>
+            <ul class="learned__list">
+              <li><span>→</span>The ingredient is cheap and easy to copy.</li>
+              <li><span>→</span>Nobody owns the occasion.</li>
+              <li><span>→</span>Claims like "antifungal" can push a cosmetic into drug rules.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 THE BIGGEST UNKNOWN ============ -->
+    <section class="section section--alt" id="unknown" data-section="08" data-name="Biggest unknown">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">08</span> The biggest unknown</p>
+          <h2 class="h2" data-reveal>What has to be true, <em class="pink">least certain first.</em></h2>
+        </header>
+
+        <ol class="risks">
+          <li class="risk" data-reveal data-certainty="1">
+            <span class="risk__n">1</span>
+            <p class="risk__text">People will <strong>spray it in the open.</strong></p>
+            <div class="risk__meter" aria-label="Certainty 1 of 4"><i></i><i></i><i></i><i></i></div>
+            <span class="risk__label">Certainty 1/4</span>
+          </li>
+          <li class="risk" data-reveal data-certainty="2">
+            <span class="risk__n">2</span>
+            <p class="risk__text">They'll pay about <strong>2.5× the clinical price per ml.</strong></p>
+            <div class="risk__meter" aria-label="Certainty 2 of 4"><i></i><i></i><i></i><i></i></div>
+            <span class="risk__label">Certainty 2/4</span>
+          </li>
+          <li class="risk" data-reveal data-certainty="2">
+            <span class="risk__n">3</span>
+            <p class="risk__text">It becomes a <strong>monthly habit</strong> — about one bottle a month.</p>
+            <div class="risk__meter" aria-label="Certainty 2 of 4"><i></i><i></i><i></i><i></i></div>
+            <span class="risk__label">Certainty 2/4</span>
+          </li>
+          <li class="risk" data-reveal data-certainty="3">
+            <span class="risk__n">4</span>
+            <p class="risk__text">It stays <strong>stable in Indian heat</strong> and within cosmetic claim rules. Solvable with the right formulator and regulatory advice.</p>
+            <div class="risk__meter" aria-label="Certainty 3 of 4"><i></i><i></i><i></i><i></i></div>
+            <span class="risk__label">Certainty 3/4</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 09 FIRST MOVE ============ -->
+    <section class="section" id="plan" data-section="09" data-name="First move">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">09</span> Your first move</p>
+          <h2 class="h2" data-reveal>The first <em class="yellow">30 days.</em></h2>
+        </header>
+
+        <div class="timeline" data-timeline>
+          <div class="timeline__rail" aria-hidden="true"><i data-timeline-fill></i></div>
+          <article class="week" data-reveal>
+            <div class="week__dot" aria-hidden="true"></div>
+            <p class="week__meta">Week 1 · <b>Listen</b></p>
+            <h3 class="h3">Gym-bag audit</h3>
+            <p><strong>40 interviews</strong> across value gyms, chain gyms, studios and run clubs in Delhi NCR and Bengaluru. Photograph <strong>50 bags.</strong></p>
+          </article>
+          <article class="week" data-reveal>
+            <div class="week__dot" aria-hidden="true"></div>
+            <p class="week__meta">Week 2 · <b>Fake door</b></p>
+            <h3 class="h3">Waitlist and price</h3>
+            <p>Show 3 designs at <strong>₹399 / ₹549 / ₹699</strong> on Instagram. Riya's travel audience tests the mover segment.</p>
+          </article>
+          <article class="week" data-reveal>
+            <div class="week__dot" aria-hidden="true"></div>
+            <p class="week__meta">Week 3 · <b>Make 200</b></p>
+            <h3 class="h3">Seed and watch</h3>
+            <p><strong>200 white-label HOCl bottles</strong> from a contract manufacturer. Seed 2 gyms and 1 run club. Count who sprays in the open.</p>
+          </article>
+          <article class="week" data-reveal>
+            <div class="week__dot" aria-hidden="true"></div>
+            <p class="week__meta">Week 4 · <b>Decide</b></p>
+            <h3 class="h3">Go or stop</h3>
+            <p>Ask testers to re-buy at full price. Book a regulatory call. Shortlist a formulator for stability testing.</p>
+          </article>
+        </div>
+
+        <div class="criterion" data-reveal>
+          <div class="criterion__ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="track"/><circle cx="60" cy="60" r="52" class="fill"/></svg>
+            <span>30%</span>
+          </div>
+          <div>
+            <p class="eyebrow eyebrow--yellow">Keep going if</p>
+            <p class="criterion__text">At least <strong>30% of testers pay ₹549 for a second bottle</strong> and people use it in the gym without being asked.</p>
+            <p class="fineprint">These are targets, not results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 WHY US ============ -->
+    <section class="section section--alt" id="team" data-section="10" data-name="Why us">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-scramble><span class="eyebrow__num">10</span> Why you</p>
+          <h2 class="h2" data-reveal>A product builder and a travel creator who have <em class="teal">built together for four years.</em></h2>
+        </header>
+
+        <div class="team">
+          <article class="founder tilt" data-reveal data-tilt>
+            <div class="founder__avatar founder__avatar--teal" aria-hidden="true">TG</div>
+            <h3 class="h3">Tanish Gupta</h3>
+            <p class="founder__role">Product &amp; operations</p>
+            <ul class="ticks">
+              <li>Product manager at <strong>Adobe.</strong></li>
+              <li>At <strong>WinZO</strong>, took Player Xchange from 0 to <strong>₹1 Cr daily GTV</strong> in 3 months.</li>
+              <li><strong>Chalet:</strong> sourced from 20+ vendors, set up manufacturing, top 5% seller on Swiggy, profitable.</li>
+              <li><strong>AnotherShot:</strong> 200+ Coldplay tickets resold with zero paid marketing.</li>
+            </ul>
+          </article>
+          <article class="founder tilt" data-reveal data-tilt>
+            <div class="founder__avatar founder__avatar--pink" aria-hidden="true">RK</div>
+            <h3 class="h3">Riya Kapoor</h3>
+            <p class="founder__role">Content &amp; trends</p>
+            <ul class="ticks">
+              <li>Travel creator behind <strong>IndiaFinity</strong>, with brand deals from Visit The USA, Airbnb and Skyscanner.</li>
+              <li>Has travelled to <strong>8 countries.</strong> She is the mover — and knows how to reach them.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="help" data-reveal>
+          <p class="eyebrow eyebrow--pink">Where we need help</p>
+          <div class="help__chips">
+            <span>Cosmetic chemist — HOCl stability &amp; packaging</span>
+            <span>Regulatory &amp; quality — licensing and safe claims</span>
+            <span>Beauty retail &amp; quick-commerce category experience</span>
+            <span>Dermatologist panel</span>
+          </div>
+          <a href="mailto:hello@pola.example?subject=I%20can%20help%20Pola" class="btn btn--outline" data-magnetic>I can help →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WAITLIST ============ -->
+    <section class="waitlist" id="waitlist" data-section="—" data-name="Waitlist">
+      <div class="waitlist__glow" aria-hidden="true"></div>
+      <div class="container waitlist__inner">
+        <div class="waitlist__copy">
+          <p class="eyebrow eyebrow--dark">Pre-launch · Delhi NCR &amp; Bengaluru first</p>
+          <h2 class="waitlist__title">Be first to <br />spray in the open.</h2>
+          <p>Join the waitlist and tell us which bottle belongs on your bag. We'll reach out for the gym-bag audit and the first 200 bottles.</p>
+        </div>
+        <form class="form" data-waitlist novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required placeholder="you@email.com" />
+            </label>
+          </div>
+          <fieldset class="field field--choice">
+            <legend>Which bottle?</legend>
+            <label><input type="radio" name="bottle" value="Orb mini" /><span>Orb · ₹199</span></label>
+            <label><input type="radio" name="bottle" value="Clip" checked /><span>Clip · ₹549</span></label>
+            <label><input type="radio" name="bottle" value="Puck refill" /><span>Puck · ₹1,199</span></label>
+          </fieldset>
+          <fieldset class="field field--choice">
+            <legend>You are a…</legend>
+            <label><input type="radio" name="persona" value="Gym Regular" checked /><span>Gym Regular</span></label>
+            <label><input type="radio" name="persona" value="Mover" /><span>Mover</span></label>
+            <label><input type="radio" name="persona" value="Both" /><span>Both</span></label>
+          </fieldset>
+          <label class="field">
+            <span>City</span>
+            <select name="city">
+              <option>Delhi NCR</option>
+              <option>Bengaluru</option>
+              <option>Mumbai</option>
+              <option>Hyderabad</option>
+              <option>Pune</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--dark btn--block" data-magnetic>Join the waitlist →</button>
+          <p class="form__msg" data-form-msg role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__big" aria-hidden="true">pola</div>
+      <div class="footer__row">
+        <p>Post-sweat care for young India.</p>
+        <p class="fineprint">A consumer business idea · The Foundery · Tanish Gupta &amp; Riya Kapoor, October 2026. Prices are hypotheses to test; figures and positions are as stated in the pitch.</p>
+        <a href="#top" class="btn btn--outline btn--sm" data-magnetic>Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BAG DRAWER ============ -->
+  <div class="drawer" data-drawer aria-hidden="true">
+    <div class="drawer__scrim" data-close-bag></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+      <header class="drawer__head">
+        <h2 id="bag-title">Your bag</h2>
+        <button class="drawer__close" data-close-bag aria-label="Close bag">✕</button>
+      </header>
+      <div class="drawer__items" data-bag-items></div>
+      <footer class="drawer__foot">
+        <div class="drawer__total"><span>Total (hypothesis)</span><b data-bag-total>₹0</b></div>
+        <a href="#waitlist" class="btn btn--pink btn--block" data-bag-reserve>Reserve via waitlist →</a>
+        <p class="fineprint">Pre-launch. Nothing is charged — your bag tells us what to make first.</p>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
